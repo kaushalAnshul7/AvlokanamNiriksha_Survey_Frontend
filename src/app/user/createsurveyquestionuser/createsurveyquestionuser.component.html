@@ -1,0 +1,48 @@
+<!--  <div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="raw"> -->
+<!--   
+        <div class="col-md-6 offset-md-3 mt20"> --> 
+  
+  
+          <!-- Pills navs -->
+         
+          <!-- Pills navs -->
+  
+          <!-- Pills content -->
+          <!-- {{surveyQuestion|json}} -->
+          <div class="abc "style="background: rgb(112,237,181);
+          background: linear-gradient(0deg, rgba(112,237,181,1) 0%, rgba(233,72,192,1) 100%);">
+              <form (ngSubmit)="formSubmit()">
+                <div class="text-center mb-3">
+                  <h3>ADD SURVEY QUESTION</h3>
+                  
+                </div>
+  
+                <!-- Title input -->
+                <div class="form-outline mb-4">
+                  <input 
+                  [(ngModel)]="surveyQuestion.questionTitle" name="questionTitle"
+                  type="text" id="questionTitle" class="form-control" />
+                  <label class="form-label" for="questionTitle">Question Title</label>
+                </div>
+  
+                <!-- Description input -->
+                <div class="form-outline mb-4">
+                  <input 
+                  [(ngModel)]="surveyQuestion.questionDescription" name="questionDescription"type="text" id="questionDescription" class="form-control" />
+                  <label class="form-label" for="questionDescription">Question Description</label>
+                </div>
+  
+               
+  
+                <!-- Submit button -->
+                <button [routerLink]="'/user/surveyuserQuestion/' + id" type="submit" class="btn btn-primary btn-block mb-3">Submit Question</button>
+              </form>
+            </div>
+            
+          <!-- </div> -->
+          <!-- Pills content -->
+        <!-- </div>
+      </div>
+    </div> -->

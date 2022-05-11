@@ -1,0 +1,100 @@
+
+<section class="">
+  <!-- Jumbotron -->
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background: rgb(244,252,32);
+  background: linear-gradient(90deg, rgba(244,252,32,1) 0%, rgba(212,255,170,1) 50%, rgba(118,223,204,1) 100%);">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="my-5 display-3 fw-bold ls-tight">
+            SignUp <br />
+            <span class="text-primary">Get Ready To Witness Survey World</span>
+          </h1>
+          <p style="color: hsl(217, 10%, 50.8%) ">
+           Welcome To The World Of Surveys
+          </p>
+        </div>
+       
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card">
+            <div class="card-body py-5 px-md-5">
+              <form (ngSubmit)="formSubmit()">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input
+                      [(ngModel)]="user.fullName" 
+                      name="fullName"
+                       type="text" id="fullName" class="form-control" />
+                      <label
+                      class="form-label" for="form3Example1">Full Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input
+                      [(ngModel)]="user.mobileNo" 
+                      name="mobileNo"
+                       type="number" id="mobileNo" class="form-control" />
+                      <label class="form-label" for="mobileNo">Mobile</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input
+                  [(ngModel)]="user.email" 
+                  name="email" 
+                  type="email" id="email" class="form-control" />
+                  <label class="form-label" for="email">Email address</label>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input
+                    [(ngModel)]="user.organisation" 
+                    name="organisation"
+                     type="text" id="organisation" class="form-control" />
+                    <label class="form-label" for="organisation">Organisation</label>
+                  </div>
+                
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input
+                    [(ngModel)]="user.profession" 
+                    name="profession" 
+                    type="text" id="profession" class="form-control" />
+                    <label class="form-label" for="profession">Profession</label>
+                  </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input
+                  [(ngModel)]="user.password" 
+                  name="password" 
+                   type="password" id="password" class="form-control" />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                  Sign up
+                </button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                 
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- {{user|json}} -->
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->

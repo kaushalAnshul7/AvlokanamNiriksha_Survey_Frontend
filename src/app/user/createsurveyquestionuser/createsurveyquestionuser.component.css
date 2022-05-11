@@ -1,0 +1,12 @@
+form{
+    box-shadow: 0 0 30px rgba(8, 7, 16, 0.6);
+    padding: 50px 45px;
+    border-radius: 20px;
+}
+form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    
+  }

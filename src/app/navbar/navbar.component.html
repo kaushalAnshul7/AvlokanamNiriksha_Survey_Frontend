@@ -1,0 +1,28 @@
+
+<html>
+<body>
+
+    <header>
+      
+      
+      
+      <h3 >अवलोकनम् Niriksha</h3>
+      <nav>
+        <ul class="nav_links">
+          <li><a  *ngIf="!isLoggedIn" href="#">Home</a></li> 
+          <li><a *ngIf="!isLoggedIn"href="#">About</a></li>
+      </ul>
+        </nav>
+        <div style="align-items: center ">
+    
+    <a [routerLink]="'/login'" *ngIf="!isLoggedIn" class="cta mr10"><button type="button" name="button">Login</button></a>
+    <a [routerLink]="'/signup'" *ngIf="!isLoggedIn" class="cta mr10"><button type="button" name="button">SignUp</button></a>
+    <a class="cta" *ngIf="isLoggedIn" (click)="logout()"><button type="button" name="button">LogOut</button></a>
+    </div>
+    
+    
+    </header>
+    
+      </body>
+ 
+    </html> 

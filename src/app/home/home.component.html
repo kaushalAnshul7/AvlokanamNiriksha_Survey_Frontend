@@ -1,0 +1,172 @@
+<main class="main" style="background: rgb(255,145,20);
+background: linear-gradient(90deg, rgba(255,145,20,1) 5%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 63%, rgba(32,252,72,1) 92%);">
+    <!-- Header -->
+    <header class="header" style="background: rgb(255,145,20);
+    background: linear-gradient(90deg, rgba(255,145,20,1) 5%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 63%, rgba(32,252,72,1) 92%);">
+      <div class="container flex-between">
+        <!-- <div class="logo">
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <nav class="main-navgation flex-between flex-ver-top">
+          <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#resources">Resources</a>
+          </div>
+          <div class="nav-buttons">
+            <a href="#" class="log-in">Login</a>
+            <a href="#" class="sign-up btn btn-sm">Sign Up</a>
+          </div>
+        </nav> -->
+        <div class="burger-menu">
+          <i class="fa-regular fa-bars icon"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Landing -->
+    <section class="landing">
+      <div class="landing-text">
+        <h1>Take A Deep Dive Into अवलोकनम् Niriksha </h1>
+        <p>
+          Conduct Your Surveys and Get Detailed Insights on How Your
+          Surveys are Performing.
+        </p>
+        <a  [routerLink]="'/signup'" *ngIf="!isloggedin" class="btn btn-lg">Get Started</a>
+      </div>
+      <div class="landing-image">
+        <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/illustration-working.svg" alt="Working Illustration" />
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <!-- Short URL Feature -->
+        <!-- <div class="url-shorten-feature">
+          <form class="url-shorten-form" id="url-shorten-form">
+            <div>
+              <input type="text" class="url-input" placeholder="Shorten a link here..." autocomplete="off" />
+              <span class="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-lg btn-plus-icon">Shorten It!</button>
+          </form>
+          <div class="url-shorten-results"></div>
+        </div> -->
+        <!-- Advanced Features -->
+        <div class="more-features">
+          <div class="section-header">
+            <h2>Advanced Features</h2>
+            <p>
+              Track how your Surveys are Performing across the Web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+          <div class="more-features-content">
+            <div class="feature">
+              <div class="feature-illustration">
+                <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-brand-recognition.svg" alt="Feature Illustration Icon" />
+              </div>
+              <div class="feature-details">
+                <h2>Wide And Distinct Range</h2>
+                <p>
+                  Boost Your Quest With Each Survey. Generic Surveys
+                  Don’t Mean a Thing. Unique Surveys Help Instil Confidence in
+                  Your Awareness.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-illustration">
+                <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-detailed-records.svg" alt="Feature Illustration Icon" />
+              </div>
+              <div class="feature-details">
+                <h2>Accurate Results</h2>
+                <p>
+                  Gain insights into Who is Giving Response. Knowing When
+                  and Where People Engage With Your Content Helps Inform
+                  Better Decisions.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-illustration">
+                <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-fully-customizable.svg" alt="Feature Illustration Icon" />
+              </div>
+              <div class="feature-details">
+                <h2>Fully Customizable</h2>
+                <p>
+                  Improve Your Awareness and Content Discoverability Through
+                  Customizable Surveys, Supercharging Audience Engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get Set Survey</h2>
+          <a [routerLink]="'/signup'"  *ngIf="!isloggedin" class="btn btn-lg">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer" id="resources">
+      <div class="container">
+        <!-- Website Logo -->
+        <!-- <div class="logo">
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/logo.svg" alt="" />
+          </a>
+        </div> -->
+        <!-- Quick Links -->
+        <div class="quick-links">
+          <div class="links-group">
+            <span>Features</span>
+            <div>
+              <a href="#">Wide Categories</a>
+              <a href="#">Iteractive Interface </a>
+              <a href="#">Accurate Results</a>
+            </div>
+          </div>
+          <div class="links-group">
+            <span>Resources</span>
+            <div>
+              <a href="#">Blog</a>
+              <a href="#">Developers</a>
+              <a href="#">Support</a>
+            </div>
+          </div>
+          <div class="links-group">
+            <span>Company</span>
+            <div>
+              <a href="#">About</a>
+              <a href="#">Our Team</a>
+              <a href="#"></a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+        <!-- Social Media -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/">
+            <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-facebook.svg" alt="Facebook Logo">
+          </a>
+          <a href="https://twitter.com/narendramodi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-twitter.svg" alt="Twitter Logo">
+          </a>
+          <a href="https://in.pinterest.com/">
+            <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-pinterest.svg" alt="Pinterest Logo">
+          </a>
+          <a href="https://www.instagram.com/kaushal_being_anshul/">
+            <img src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-instagram.svg" alt="Instagram Logo">
+          </a>
+        </div>
+      </div>
+     
+    </footer>
+  </main>

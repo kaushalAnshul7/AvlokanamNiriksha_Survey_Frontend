@@ -1,0 +1,54 @@
+<mat-card class="mt10" style="text-align: center; background: rgb(233,231,68);
+background: radial-gradient(circle, rgba(233,231,68,1) 35%, rgba(162,161,123,1) 93%);" *ngIf="user">
+    <h1 style="align-self: center; font-family:Verdana, Geneva, Tahoma, sans-serif ;border-radius: 10px;">PROFILE DETAILS</h1>
+ <!--  {{user | json}} -->
+    <mat-card-content> 
+        <div class="bootstrap-wrapper" >
+            <div class="container">
+
+                <div class="container text-center">
+                    <!-- <img src="../../../assets/profile.jpg" 
+                    alt="" class="profile-image"> -->
+                    <h1 class="mt20">{{user.fullName}}</h1>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <!-- table Details -->
+                        <table class="table text-center">
+                            <tr>
+                                <td>Username</td>
+                                <td>{{user.fullName}}</td>
+                            </tr>
+                            <tr>
+                                <td>Userid</td>
+                                <td>{{user.id}}</td>
+                            </tr>
+                            <tr *ngIf="user.phone">
+                                <td>Phone</td>
+                                <td>{{user.mobileNo}}</td>
+                            </tr>
+                            <tr *ngIf="user.email">
+                                <td>Email</td>
+                                <td>{{user.email}}</td>
+                            </tr>
+                            <tr>
+                                <td>Role</td>
+                                <td>{{user.authorities[0].authority}}</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>{{user.enabled ? "ACTIVE" : "NOTACTIVE"}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="text-center">
+        <!-- <button mat-raised-button color="primary">UPDATE</button> -->
+         <button [routerLink]="'/user/survey'" mat-raised-button color="primary">Add Survey</button>
+        <button [routerLink]="'/user/showSurvey'" mat-raised-button color="warn">View Survey</button> 
+      </mat-card-actions>
+</mat-card>
